@@ -3,7 +3,7 @@
 # certificate 
 ![certificte](/Python_and_Django_or_Beginners.jpg)
 
-### [Udemy Course Python and Django for Beginners link](https://www.udemy.com/share/102iF43@v4ORxCjSLgu9Tg0ZoLQ1TChKN79w_05ClrQTrbvOQnW-RLV3NlNd9lhOHzTzoaVEhA==/)
+### [Udemy Course Python and Django for Beginners link](https://www.udemy.com/course/python-tutorials-for-by-navinreddy)
 
 
 ### Setup and run locally
