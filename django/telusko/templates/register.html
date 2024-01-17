@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" >
+    <script src="main.js"></script>
+    <style>
+        /* main.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3498db;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+div {
+    margin-top: 20px;
+}
+
+h3 {
+    color: #e74c3c;
+}
+
+    </style>
+</head>
+
+<body>
+    <form action="register" method="post">
+        {% csrf_token %}
+        <input type="text" name="first_name" placeholder="First Name" required><br>
+        <input type="text" name="last_name" placeholder="Last Name" required><br>
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password1" placeholder="Password" required><br>
+        <input type="password" name="password2" placeholder="Confirm Password" required><br>
+        <input type="submit">
+    </form>
+    <div>
+        {% for message in messages %}
+        <h3> {{message}} </h3>
+        {% endfor %}
+    </div>
+</body>
+</html>
