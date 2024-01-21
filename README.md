@@ -93,3 +93,8 @@ python3 -m http.server 5000
 "http://127.0.0.1:8000/admin/"
 ```
 
+##### for more info OR suggestion contact me on
+
+ ### <a href="https://twitter.com/ramgopalsiddh1/"> my twitter </a>
+
+ ### 🔗<a href="https://ramgopal.dev/">portfolio website</a>
